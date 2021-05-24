@@ -1,0 +1,139 @@
+*{
+    margin: 0; padding: 0;box-sizing: border-box;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/delhi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 15s;
+
+    animation-name: animation;
+    animation-direction: alternate-reverse;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animation{
+	0%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/darj.jpg');}
+	10%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/taj.jpg');}
+	20%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/jaipur.jpg');}
+	30%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/kerela.jpg');}
+	40%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/kolkata.jpg');}
+	50%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/mumbai.jpg');}
+	60%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/Kashmir.jpg');}
+	70%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/lotus.jpg');}
+	80%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/golden.jpg');}
+	90%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/akshar.jpg');}
+	100%{background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url('../images/delhi.jpg');}
+
+}
+nav{
+    width: 100%; height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: white; display: flex; justify-content: space-between ;
+    align-items: center; text-transform: uppercase;
+}
+
+nav .logo{
+	width: 25%; text-align: center;
+}
+nav .menu{
+	width: 40%;
+	display: flex; justify-content: space-around;
+}
+nav .menu a {
+	width: 25%;
+	color: white;
+	text-decoration: none;
+	font-weight: bold ;
+}
+
+nav .menu a:first-child{
+	color: rgba(255, 99, 71, 1) ;
+}
+main{
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    text-align: center; color: white;
+    }
+
+ section{
+
+ }
+
+ section h3{
+ 	font-size: 45px; font-weight: 500;letter-spacing: 5px;
+ 	text-shadow: 2px 1px 5px black;
+ }
+section h1{
+	margin: 20px 0 30px 0;
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 3px 2px 6px black;
+	text-transform: uppercase;
+}
+
+section p{
+	font-size: 30px;
+	word-spacing: 2px;
+	margin-bottom: 30px;
+	text-shadow: 1px 1px 1px black;
+}
+
+section a{
+	padding: 12px 30px;
+	border radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .10s ease;
+}
+
+section .btnone{
+         background: #fff;
+         color: #000;
+         font-weight: bold;
+}
+.btnone:hover{
+	     background: rgba(255, 99, 71, 1);
+         color: #000;
+         font-weight: bold;
+}
+section .btntwo{
+         background: rgba(255, 99, 71, 1);
+         color: #000;
+         font-weight: bold;
+}
+.btntwo:hover{
+	     background: #fff;
+         color: #000;
+         font-weight: bold;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: rgba(255, 99, 71, 1);
+}
+
+@keyframes changetext{
+	0%{content: "DARJEELING";}
+	15%{content: "AGRA";}
+	30%{content: "JAIPUR";}
+	45%{content: "KERELA";}
+	60%{content: "KOLKATA";}
+	75%{content: "MUMBAI";}
+	90%{content: "KASHMIR";}
+	100%{content: "DELHI";}
+
+}
